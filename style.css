@@ -1,0 +1,81 @@
+.background{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    min-width: 1000px;
+    z-index:-10;
+    zoom: 1;
+    background-color: #fff;
+    background: url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+};
+
+.body {
+    /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 1em 3em;
+    position: absolute;
+    color: white;
+  }
+
+.nav ul{
+    width:1300px;   
+    border:1px solid #000;
+    margin:0px auto 0px auto;
+   }
+.nav ul li{
+    float:left;
+    }
+.nav ul li a{
+    width:290px;
+    height:28px;
+    line-height:28px;   
+    background:red;    
+    color:#FFF;
+    margin:5px 10px;
+    font-size:12px;
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    }
+.nav ul li a:hover{
+    width:280px;        
+    height:26px;
+    line-height:28px;
+    border:1px solid red;
+    color:red;
+    background:#FFF;       
+    }
+
+.main1 {
+    width:80%;
+    height:2000px;
+    margin:50px 100px;
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing:1px;
+    line-height: 25px;
+    padding: 1em 3em;
+    position: absolute;
+    color: white;
+
+}
+
+.label {
+    fill: white;
+    text-anchor: middle;
+  }
+  
+.axis {
+    font-size: 16px;
+    fill: white;
+  }
+
+.tick {
+  color: white;
+}

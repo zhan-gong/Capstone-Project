@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dota2 Win Rate Analysis</title>
+    <link rel="stylesheet" href="./style.css">
+    <div class = "img1"><img src="3.jpg"></div>
+  </head>
+  <body>
+  <div class = "background">
+    <nav class="nav">
+      <ul class="nav-list">
+	      <li class="nav-item"><a href="http://localhost:5000/Main">Game introduction</a></li>
+        <li class="nav-item"><a href="http://localhost:5000/GPM">Heroes' Gold and Experience per minute</a></li>
+        <li class="nav-item"><a href="http://localhost:5000/DPM">Heroes' Damage per minute</a></li>
+        <li class="nav-item"><a href="http://localhost:5000/WinRate">Heroes' Win Rate</a></li>
+        <li class="nav-item"><a href="#">Ban Pick Analysis</a></li>
+      </ul>
+    </nav>
+      <div class="discribe"><p>This graph visualizes heroes’ GPM (Gold Per Minute) and XPM (Experience Per Minute) sorted by GPM, with green indicating higher values and red indicating lower values. In general, the higher GPM a hero gets, the better items this hero will be able to afford. Similarly, the higher XPM a hero gets, the stronger the hero’s skills will become. <br/>
+        <p>Visualizing GPM and XPM can help us better decide the positions of heroes in the game. Heroes who have higher GPM and XPM are often placed in the 1st and 2nd positions for their farming (the acquisition of gold) abilities. By contrast, heroes with low GPM can never play the 1st or 2nd position. For example, the top 21 heroes (from Alchemist to Gyrocopter) in Figure 2 all have high GPM, making them ideal choices for the 1st and 2nd position, especially the 1st position, heroes.</p>
+        <p>When choosing heroes, a team needs to consider how to choose heroes to fill the five positions in the game, with each position having its unique focus. For example, the hero Alchemist has the highest GPM and XPM. Suppose our first four picks have already chosen 1st and 2nd position heroes. In that case, we cannot choose Alchemist as our 5th pick hero as this choice will make the 1st and 2nd position heroes have no gold to farm (the amount of gold in a game is finite, if Alchemist farms too much gold, the 1st position hero will have no gold to farm) and ultimately make the team lose this match. </p>
+        XPM, with green indicating higher values and red indicating lower values. From This graph, we can see that some heroes have good XPM performance but perform poorly in GPM (Storm Spirit, Ember Spirit, to name a few). In this case, heroes are best for playing the 2nd position, for their main role is ganking the enemy and participating in a team fight rather than farming gold (participating in team fights is the main method to earn XPM). </p>
+    </div>
+
+    <div class='tableauPlaceholder' id='viz1615404722895' style='position: relative'><noscript><a href=''><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Do&#47;Dota2WinRateDiscovery&#47;5_1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Dota2WinRateDiscovery&#47;5_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Do&#47;Dota2WinRateDiscovery&#47;5_1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1615404722895');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+  </div>
+  </body>
+
+</html>
+
+

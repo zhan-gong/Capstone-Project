@@ -1,20 +1,14 @@
 .background{
     position:relative;
-    /* top: 0;
-    left: 0; */
-    width:100%;
-    height:100%;
-    /* min-width: 1000px; */
-    /* z-index:-10; */
-    /* zoom: 1; */
-    background-color: #fff;
+    width: 100%;
+    height:2000px;
     background: url(1.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-position: center 0;
-};
+
+}
 
 .body {
     /* ref: https://fonts.google.com/specimen/Source+Sans+Pro?selection.family=Source+Sans+Pro */
@@ -23,6 +17,7 @@
     position: absolute;
     color: white;
   }
+
 
 .nav ul{
     width:2000px;   
@@ -55,59 +50,6 @@
     background:rgb(94, 87, 87);       
     }
 
-/* .main1 {
-    width:80%;
-    height:2000px;
-    margin:50px 100px;
-    font-family: "Source Sans Pro", sans-serif;
-    letter-spacing:1px;
-    line-height: 25px;
-    padding: 1em 3em;
-    position: absolute;
-    color: white;
-
-}
-
-.label {
-    fill: white;
-    text-anchor: middle;
-  }
-  
-.axis {
-    font-size: 16px;
-    fill: white;
-  }
-
-.tick {
-  color: white;
-} */
-
-.tableauPlaceholder {
-  position: relative;
-  left:50px;
-  top:10px;
-  margin:50px 100px;
-}
-
-.discribe{
-  left:50px;
-  position: relative;
-  width: 400px;
-  word-wrap: break-word;
-  float: left;
-  margin:50px 100px;
-  color:#fff; 
-  font-family: "Times New Roman", Times, serif;
-  text-indent: 30px;
-  letter-spacing: 1px;
-  font-size: 15px;
-}
-
-/* .he {
-  width: auto;
-  height: 500px;
-} */
-
 .img1{
   position:relative;
   /* top: 0px;
@@ -120,6 +62,31 @@
 }
 
 .img1 img{
-  width:100%;
-	height:auto;
+    width:100%;
+      height:auto;
+  }
+
+.para1{
+    position:relative;
+    display:flex;
+    float:left;
+    color:#FFF;
+    margin:50px 100px;
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing:1px;
+    line-height: 25px;
+    font-size: 55px;
+    padding: 0.5em 2em;    
+    text-align:center
+
+}
+.para2{
+    position:relative;
+    float:left;
+    color:#FFF;
+    font-family: "Times New Roman", Times, serif;
+    margin:50px 100px;
+    text-indent: 30px;
+    letter-spacing: 1px;
+    font-size: 18px;
 }

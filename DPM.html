@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dota2 Win Rate Analysis</title>
+    <link rel="stylesheet" href="./style.css">
+    <div class = "img1"><img src="3.jpg"></div>
+  </head>
+  <body>
+  <div class = "background">
+    <nav class="nav">
+      <ul class="nav-list">
+	      <li class="nav-item"><a href="http://localhost:5000/Main">Game introduction</a></li>
+        <li class="nav-item"><a href="http://localhost:5000/GPM">Heroes' Gold and Experience per minute</a></li>
+        <li class="nav-item"><a href="http://localhost:5000/DPM">Heroes' Damage per minute</a></li>
+        <li class="nav-item"><a href="http://localhost:5000/WinRate">Heroes' Win Rate</a></li>
+        <li class="nav-item"><a href="#">Ban Pick Analysis</a></li>
+      </ul>
+    </nav>
+      <div class="discribe"><p>This graph shows how much damage a hero does to their enemy’s hero per minute (DPM) and how much damage a hero does to their enemy’s building per minute (BDPM), sorted by DPM. In general, the 1st and 2nd position heroes both have more DPM than other positions. Specifically, the 2nd position hero causes more damage than the 1st position hero, for the 2nd position hero participates more in team fights than the 1st position hero. </p>
+        <p>A team also needs to consider that some of the 1st or 2nd position heroes cannot cause damage to the buildings, such as Zeus and Tinker, who rank high in DPM but low in BDPM. In this case, we need to have a 3rd, 4th, or 5th position hero who can cause building damage to help other teammates destroy the enemy’s tower. This is why despite having the lowest DPM and very low GPM, Chen (not shown in Figure 4) is still a popular hero in the tournament matches for his relatively good performance in BDPM and has more than a 60 percent win rate.</p>
+      
+    </div>
+
+    <div class='tableauPlaceholder' id='viz1615396914769' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Do&#47;Dota2WinRateDiscovery&#47;6_1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Dota2WinRateDiscovery&#47;6_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Do&#47;Dota2WinRateDiscovery&#47;6_1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='zh-Hans' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1615396914769');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+  </div>
+  </body>
+
+</html>
+

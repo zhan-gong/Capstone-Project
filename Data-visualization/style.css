@@ -123,3 +123,40 @@
   width:100%;
 	height:auto;
 }
+
+.para1{
+  position:relative;
+  display:flex;
+  float:left;
+  color:#FFF;
+  margin:50px 100px;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing:1px;
+  line-height: 25px;
+  font-size: 55px;
+  padding: 0.5em 2em;    
+  text-align:center
+
+}
+.para2{
+  position:relative;
+  float:left;
+  color:#FFF;
+  font-family: "Times New Roman", Times, serif;
+  margin:50px 100px;
+  text-indent: 30px;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.background2{
+  position:relative;
+  width: 100%;
+  height: 1000px;
+  background: url(1.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+
+}

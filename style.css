@@ -25,7 +25,7 @@
   }
 
 .nav ul{
-    width:2000px;   
+    width:100%;   
     border:1px solid #000;
     margin:0px auto 0px auto;
    }
@@ -92,15 +92,16 @@
 .discribe{
   left:50px;
   position: relative;
-  width: 400px;
+  width: 20%;
   word-wrap: break-word;
   float: left;
   margin:50px 100px;
-  color:#fff; 
+  color:rgb(255, 255, 255); 
   font-family: "Times New Roman", Times, serif;
   text-indent: 30px;
   letter-spacing: 1px;
   font-size: 15px;
+  font-weight: bolder;
 }
 
 /* .he {
@@ -144,6 +145,7 @@
   text-indent: 30px;
   letter-spacing: 1px;
   font-size: 15px;
+  font-weight: bolder;
 }
 
 .background2{

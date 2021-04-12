@@ -96,11 +96,12 @@
   word-wrap: break-word;
   float: left;
   margin:50px 100px;
-  color:#fff; 
+  color:rgb(255, 255, 255); 
   font-family: "Times New Roman", Times, serif;
   text-indent: 30px;
   letter-spacing: 1px;
   font-size: 15px;
+  font-weight: bolder;
 }
 
 /* .he {
@@ -144,6 +145,7 @@
   text-indent: 30px;
   letter-spacing: 1px;
   font-size: 15px;
+  font-weight: bolder;
 }
 
 .background2{

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Karla:400,400i,700%7CLato:300,400,400i,700' rel='stylesheet'>
+
+  <!-- Css -->
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./bootstrap.min.css" />
+</head>
+
+<body>
+  <main class="main-wrapper">
+    <header class="nav nav--transparent">
+      <div class="nav__holder" id="sticky-nav">
+        <div class="container-fluid">
+          <div class="flex-parent">
+              <div class = "nav__header flex-child clearfix">
+                <div class="logo-wrap">
+                  <a href="./index" class="logo__link">
+                    <img class="Home" src="./img/Home-light.png" alt="logo">
+                  </a>
+                </div>
+              </div>
+              <nav id="navbar-collapse" class="nav__wrap flex-child collapse navbar-collapse">
+                <ul class="nav__menu">
+                  <li class="nav__dropdown flex-child active"><a href="../Introduction">Game Introduction</a></li>
+                  <li class="nav__dropdown flex-child active"><a href="../GPM">Heroes' Gold/Experience Per Minute</a></li>
+                  <li class="nav__dropdown flex-child active"><a href="../DPM">Heroes' Damage Per Minute</a></li>
+                  <li class="nav__dropdown flex-child active"><a href="../WinRate">Heroes' Win Rate</a></li>
+                  <li class="nav__dropdown flex-child active"><a href="../BanPickAnalysis.html">Ban/Pick Analysis</a></li>
+                </ul>
+              </nav>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </header>
+    <div class="content-wrapper oh">
+      <section class="page-title bg-img text-center" style="background-image: url(./img/hero_2.jpg);">
+        <div class="container">
+          <div class="page-title__holder">
+            <div class="page-title__inner">
+              <h1 class="page-title__title">Game Introduction</h1>
+            </div>            
+          </div>
+        </div>
+      </section>
+      <section class="section-wrap">
+        <div class="container">
+          <div class="row text-center">
+
+            <div class="col-md-8 col-md-offset-2" style="text-align: left;">
+              <p class="lead mb-40">This research explores how to choose heroes for the popular online eSport game Dota 2. As a sequel to Defense of the Ancients (Dota), Dota 2 is a multiplayer online battle arena (MOBA) game developed and published by Valve Corporation. The game has the highest prize pool in all kinds of the game championship. As of November 15, 2019, the total prize pool of Dota 2 International reaches $34,330,068, making it the most lucrative game in E-sport (Dota 2 Prize Pool Tracker 2019).</p>
+              <p class="lead mb-40">The game is played in matches between two teams of five players, one team will play as Radiant, and the other team will play as Dire. Each team occupies and defends its respective base on the map, and the team that destroys the other team’s ancient building (known as “Ancient,” located within each team’s base) wins the game. Each player controls one of the 117 characters (known as “heroes”). Once a hero is chosen, other players cannot choose that same hero for the same match. Heroes have their unique strengths and weaknesses based on their skills and characteristics. Different combinations of heroes in a team will have different interactions, ultimately yielding different match outcomes. Hero selection is so crucial to the game that carefully designed hero choices can “implicitly give a team a large advantage before the match even begins” (Conley and Perry 2013).</p>
+              <p class="lead mb-40">By combining data visualization and neural network machine learning, this project seeks to help players choose heroes to maximize a team’s likelihood of victory. I will start by introducing some game-play terms. I then visualize key statistics of heroes and interpret how to use these visualizations to choose heroes. Next, I use a basic neural network machine learning model to predict a team’s match outcome (win/lose) based on their hero choices. Finally, I evaluate my project and discuss what needs to be done in the conclusion section.</p>
+              <p style="font-weight: bold; font-size: 30px;" >Lanes</p>
+              <p class="lead mb-40">When a player starts to choose a hero, the player first needs to decide which lane he/she is trying to play. A lane is one of three paths (the Top line, the Middle line, and the Bottom line) that leads from one team’s Ancient (base) to the other (see Figure 1). When the game starts, the lane creeps (non-player characters) will push along these lanes (Dota 2 Wiki 2021). Players need to kill these creeps to obtain gold  and experience points and destroy defense towers while approaching the enemy base in these lanes (eSportsGuide 2019).</p>
+              <p class="lead mb-40">Depending on the distance between the natural creep equilibrium (where the two creeps initially meet up) and the Tier 1 tower, these lanes are also known as the safe lane and the hard lane. The safe lane is the one with the shortest distance so that it is easy for a laning hero can retreat to their tower’s protection. By contrast, a team’s safe lane is the hard lane for the enemy team, for it is difficult for enemies to sneak through the jungle and gank the laning hero (gank in Dota 2 refers to the action of leaving your lane during the laning phase and killing an enemy Hero in another lane) (Dota 2 Wiki 2021). For example, for Radiant, the bottom line is their safe lane, whereas it is the hard lane for Dire. In general, a team will choose a hero with better survival abilities for their hard lane and let their most important player play the safe lane.</p>
+              </p>
+              <p style="font-weight: bold; font-size: 30px;">Positions</p>
+              <p class="lead mb-40">There are five positions in each team, with 1 indicating the player has the highest farm (the acquisition of gold) gold priority and the 5 having the lowest. At the early stage of the game, a team usually has one player focusing on the safe lane, and this player is often known as the 1st position hero. The 1st position hero needs to have good farming abilities to gather enough gold quickly. The hero will become the strongest hero later in the game if the team gains a significant gold advantage (With gold, the 1st position hero can buy items that give the hero extra abilities). </p>
+              <p class="lead mb-40">To make sure the 1st position hero farms safely and not to be disturbed by the enemy, a team usually has a support hero following the 1st position hero on the safe lane, whom we call the 5th position hero. Because the amount of gold is finite, the support hero will not farm gold; instead, the support hero usually picks more spells (that are not affected by the gold the hero gets) and uses their abilities to gain an advantage for the entire team. </p>
+              <p class="lead mb-40">In the middle of the game, a team usually encounters a situation when the amount of gold is not enough to sustain its heroes. It is thus essential for the 4th position hero to farm gold for the team when other heroes have no time to acquire gold in the mid-game. Players in the 4th position are also responsible for supporting heroes in other lanes and ganking the enemy. </p>
+              <p class="lead mb-40">The 2nd position is the most crucial position in the game. Heroes in this position usually play the middle line, and as the middle line is usually a 1v1 situation, the 2nd position hero needs to have strong skills to dominate a 1v1 situation and can farm enough gold to upgrade skills quickly. Heroes in this position are chosen for their farming abilities and ganking abilities, which are reflected on their GPM (gold per minute) and XPM (experience per minute). Due to these reasons, there are not many options for the 2nd position heroes. </p>
+              <p class="lead mb-40">The last position is the 3rd position hero. The 3rd position hero usually plays the hard lane; sometimes, the 4th position support hero will help the 3rd position hero on the hard lane, but more often, the 3rd position hero is solo in the hard lane. Therefore, the 3rd position hero's primary focus is simply to survive and farm gold when possible. Thus, heroes in this role are required to have a set of survival skills and can be upgraded by the hero's items.</p>
+            </div>
+          </div>
+        </div>        
+      </section>
+    </div>
+  </main>
+</body>
+</html>
